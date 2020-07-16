@@ -16,6 +16,8 @@
         double d = 326600 * 0.24;
         double e = 414700 * 0.32;
         double f = 622050 * 0.35;
+        double [] INCOME_TAX = {19750,80250,171050,326600,414700,622050};
+        double [] RATE = {0.1,0.12,0.22,0.24,0.32,035}
         if (income <= 19750) {
             return income * 0.1;
         } else if (income <= 80250) {
