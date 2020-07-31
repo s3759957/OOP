@@ -1,7 +1,6 @@
 package asm_1.Model;
 
 import java.io.FileNotFoundException;
-import java.util.*;
 
 /**
  * 
@@ -61,7 +60,7 @@ public class Dvd {
      * @return
      */
     public String toString() {
-        return id +"; "+title +"; "+authors+"; "+ publication +"; "+ year +"; "+ language +"; "+ subject +"; "+ status+"; "+ numberOfCopy;
+        return id +";"+title +";"+authors+";"+ publication +";"+ year +";"+ language +";"+ subject +";"+ status+";"+ numberOfCopy+";";
     }
 
 

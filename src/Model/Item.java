@@ -157,23 +157,26 @@ public class Item extends Menu{
 
             if (id.matches("B.*")) {
                 for (int i=0;i<books.size();i++){
-                    if (books.get(i).getId() == id) {
+                    if (books.get(i).getId().equals(id)) {
                         books.remove(i);
                         addItem(newInformation);
+                        break;
                     }
                 }
             } else if (id.matches("J.*")) {
                 for (int i=0;i<journals.size();i++){
-                    if (journals.get(i).getId() == id) {
+                    if (journals.get(i).getId().equals(id)) {
                         journals.remove(i);
                         addItem(newInformation);
+                        break;
                     }
                 }
             } else if (id.matches("D.*")) {
                 for (int i = 0; i < dvds.size(); i++) {
-                    if (dvds.get(i).getId() == id) {
+                    if (dvds.get(i).getId().equals(id)) {
                         dvds.remove(i);
                         addItem(newInformation);
+                        break;
                     }
                 }
             }

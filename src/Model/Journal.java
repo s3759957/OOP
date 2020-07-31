@@ -1,7 +1,6 @@
 package asm_1.Model;
 
 import java.io.FileNotFoundException;
-import java.util.*;
 
 /**
  * 
@@ -63,7 +62,7 @@ public class Journal{
      * @return
      */
     public String toString() {
-        return id +"; "+title +"; "+ publication +"; "+ year +"; "+ issn +"; "+ language +"; "+ subject +"; "+ status+"; "+ numberOfCopy;
+        return id +";"+title +";"+ publication +";"+ year +";"+ issn +";"+ language +";"+ subject +";"+ status+";"+ numberOfCopy+";";
     }
 
     public String getId() {

@@ -1,7 +1,6 @@
 package asm_1.Model;
 
 import java.io.FileNotFoundException;
-import java.util.*;
 
 /**
  * 
@@ -72,7 +71,7 @@ public class Book {
      * @return
      */
     public String toString() {
-        return id  +"; "+ title +"; "+ authors +"; "+ edition +"; "+ publication +"; "+ year +"; "+ isbn +"; "+ language +"; "+ subject +"; "+ status+"; "+ numberOfCopy;
+        return id  +";"+ title +";"+ authors +";"+ edition +";"+ publication +";"+ year +";"+ isbn +";"+ language +";"+ subject +";"+ status+";"+ numberOfCopy+";";
     }
 
     public String getId() {
