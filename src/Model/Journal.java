@@ -6,17 +6,13 @@ import java.util.*;
 /**
  * 
  */
-public class Book {
+public class Journal{
 
     /**
      * Default constructor
-     * @param
-     *
      */
-    public Book() throws FileNotFoundException {
-        authors = null;
-        edition = null;
-        isbn = null;
+    public Journal() throws FileNotFoundException {
+        issn = null;
         id = null;
         title = null;
         publication = null;
@@ -28,9 +24,7 @@ public class Book {
 
     }
 
-    private String authors;
-    private String edition;
-    private String isbn;
+    private String issn;
     private String id;
     private String title;
     private String publication;
@@ -40,23 +34,20 @@ public class Book {
     private String status;
     private int numberOfCopy;
 
+
+
     /**
-     * @param id
      * @param title 
-     * @param authors 
-     * @param edition 
      * @param publication 
      * @param year 
-     * @param isbn 
+     * @param issn 
      * @param language 
      * @param subject 
      * @param status
      * @param numberOfCopy
      */
-    public Book(String id,String title,String authors,String edition,String publication,String year,String isbn,String language,String subject,String status,int numberOfCopy) {
-        this.authors = authors;
-        this.edition = edition;
-        this.isbn = isbn;
+    public Journal(String id,String title, String publication, String year, String issn, String language, String subject, String status, int numberOfCopy) {
+        this.issn = issn;
         this.id = id;
         this.title = title;
         this.publication = publication;
@@ -65,14 +56,14 @@ public class Book {
         this.subject = subject;
         this.status = status;
         this.numberOfCopy = numberOfCopy;
-
     }
+
 
     /**
      * @return
      */
     public String toString() {
-        return id  +"; "+ title +"; "+ authors +"; "+ edition +"; "+ publication +"; "+ year +"; "+ isbn +"; "+ language +"; "+ subject +"; "+ status+"; "+ numberOfCopy;
+        return id +"; "+title +"; "+ publication +"; "+ year +"; "+ issn +"; "+ language +"; "+ subject +"; "+ status+"; "+ numberOfCopy;
     }
 
     public String getId() {
@@ -83,27 +74,11 @@ public class Book {
     }
 
     /**
-     * @param authors 
+     * @param issn
      * @return
      */
-    public void setAuthors(String authors) {
-        this.authors = authors;
-    }
-
-    /**
-     * @param edition 
-     * @return
-     */
-    public void setEdition(String edition) {
-        this.edition = edition;
-    }
-
-    /**
-     * @param isbn 
-     * @return
-     */
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setIssn(String issn) {
+        this.issn = issn;
     }
 
     /**
@@ -111,7 +86,7 @@ public class Book {
      * @return
      */
     public void setTitle(String title) {
-      this.title = title;
+        this.title = title;
     }
 
     /**
@@ -127,7 +102,7 @@ public class Book {
      * @return
      */
     public void setYear(String year) {
-       this.year = year;
+        this.year = year;
     }
 
     /**
