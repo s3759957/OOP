@@ -1,0 +1,2 @@
+id;title;authors;edition;publication;year;isbn;language;subject;status;numberOfCopy;
+
