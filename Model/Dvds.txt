@@ -1,0 +1,22 @@
+String id,Stringtitle;authors;publicat;year;langua;subject;status;copy
+B1;DVD-art : innovation in DVD packaging design;Rivers, Charlotte;Singapore : Page One Pub;2005;English;DVDs -- Packaging;Available;4
+B2;Best of disc art. 1 : innovation in CD, DVD & vinyl packaging design;Rivers, Charlotte;Mies, Switzerland; Hove, U.K. : RotoVision SA;2008;English;DVDs -- Packaging;Available;5
+B3;CD-art : innovation in CD packaging design;Rivers, Charlotte;Crans-Pre`s-Ce´ligny ; Hove : RotoVision;2008;English;Compact discs -- Packaging;Available;4
+B4;FIFA World Cup : 1978 - 1990. DVD 8 - 11;Renton, WA : Topics Entertainment;2010;English;Compact discs -- Packaging;Available;5
+B5;Who do you think you are? : featuring the complete series one and series two and the How to trace your family DVD. Series two;Thong, Luong;2008;English;Documentary television programs -- Great Britain;Available;4
+B6;Three documentaries. Paul Robeson : tribute to an artist, The love goddess, The great chase;New York, NY : Janus Films;Janus Films;2016;English;Historical films;Available;4
+B7;Alexander Nevsky;New York, NY : Janus Films;Janus Films;2018;English;Historical films;Available;5
+B8;Wild strawberries;New York, NY : Janus Films;Janus Films;2019;English;Historical films;Available;4
+B9;Umberto D.;New York, NY : Janus Films;Janus Films;2019;English;Historical films;Available;5
+B10;The 39 steps;New York, NY : Janus Films;Janus Films;2008;English;Historical film;Available;5
+B11;Who do you think you are? : featuring the complete series one and series two and the How to trace your family DVD. v.3. How to trace your family [videorecording];London : BBC ; Distributed under licence from Wall to Wall Media Limited by Acorn Media UK;Hien, Tran;2008;English;;Available;5
+B12;Ashes and diamonds;New York, NY : Janus Films;Janus Films;2012;English;Historical films;Available;4
+B13;Beauty and the beast;New York, NY : Janus Films;Janus Films;2019;English;Historical films;Available;4
+B14;L'avventura [videorecording];New York, NY : Janus Films;Criterion Collection (Firm);2018;English;;Available;5
+B15;The complete DVD book : designing, producing, and marketing your independent film on DVD;Gore, Chris;Studio City, CA : Michael Wiese Productions;2016;English;DMotion pictures -- Marketing;Available;5
+B16;Big little lies;USA : Penguin Group;Moriarty, Liane;2017;English;Drama;Available;4
+B17;Three seasons;USA : Penguin Group;Keitel, Harvey;2010;English;Feature films;Available;4
+B18;Outsourced;Andy, Hong;Seattle, Wash : Shadowcatcher Entertainment;2010;English;DVDs -- Packaging;Available;4
+B19;One flew over the cuckoo's nest;Milos, Forman;Burbank, CA : Warner Home Video;2014;English;Compact discs -- Packaging;Available;5
+B20;I am Legend;Braga, Alice;Hochiminh : Innoform Media;2010;English;Viruses -- Drama;Available;4
+
