@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * 
  */
-public class MemberList extends Transaction{
+public class MemberList extends TransactionList{
 
     /**
      * Default constructor
@@ -32,41 +32,41 @@ public class MemberList extends Transaction{
 
 
 
-    private void displayMember(ArrayList<String> array) {
-
-        String command = "n";
-        int count = 0;
-        Scanner scanner = new Scanner(System.in);
-
-        while (command.equals("q") == false){
-            //Heading of page
-            System.out.println("***********************************************************************");
-            for (int i = count; i < count + 10; i ++) {
-                if (i< array.size()) {
-                    System.out.println(array.get(i));
-                } else {
-                    System.out.println();
-                }
-            }
-            //Footing of page
-            System.out.println("***********************************************************************");
-            System.out.print("press 'n' to go to the next page, 'p' to go to the previous page, and 'q' for quit: ");
-            command = scanner.next();
-            if (command.equals("n")) {
-//              one more if clause to check if array is out of bound
-                if (array.size()-count>10){count += 10;}
-            } else if (command.equals("p")) {
-//              one more if clause to check if array is out of bound
-                if (count > 0) {count -= 10;}
-            } else if (command.equals("q")) {
-                break;
-            } else {
-                System.out.println("INVALID INPUT !!!");
-                break;
-            }
-        }
-
-    }
+//    private void displayMember(ArrayList<String> array) {
+//
+//        String command = "n";
+//        int count = 0;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        while (command.equals("q") == false){
+//            //Heading of page
+//            System.out.println("***********************************************************************");
+//            for (int i = count; i < count + 10; i ++) {
+//                if (i< array.size()) {
+//                    System.out.println(array.get(i));
+//                } else {
+//                    System.out.println();
+//                }
+//            }
+//            //Footing of page
+//            System.out.println("***********************************************************************");
+//            System.out.print("press 'n' to go to the next page, 'p' to go to the previous page, and 'q' for quit: ");
+//            command = scanner.next();
+//            if (command.equals("n")) {
+////              one more if clause to check if array is out of bound
+//                if (array.size()-count>10){count += 10;}
+//            } else if (command.equals("p")) {
+////              one more if clause to check if array is out of bound
+//                if (count > 0) {count -= 10;}
+//            } else if (command.equals("q")) {
+//                break;
+//            } else {
+//                System.out.println("INVALID INPUT !!!");
+//                break;
+//            }
+//        }
+//
+//    }
 
 
     public void searchMembers(String keywords) {
@@ -78,7 +78,7 @@ public class MemberList extends Transaction{
                 array.add(elm.toString());
             }
         }
-        displayMember(array);
+        displaySearchedResults(array);
     }
 
     /**

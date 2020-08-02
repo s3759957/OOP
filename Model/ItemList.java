@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class ItemList extends Transaction{
+public class ItemList extends TransactionList{
 
     /**
      * Default constructor
@@ -81,26 +81,26 @@ public class ItemList extends Transaction{
      */
     public void searchItems(String keywords) {
         String regex = ".*"+keywords+".*";
-        //Heading of page
-        System.out.println("***********************************************************************");
+        ArrayList<String> array = new ArrayList<>();
 
         for(Book elm:books) {
             if (elm.toString().matches(regex)) {
-                System.out.println(elm.toString());
+                array.add(elm.toString());
+                displaySearchedResults(array);
             }
         }
         for(Journal elm:journals) {
             if (elm.toString().matches(regex)) {
-                System.out.println(elm.toString());
+                array.add(elm.toString());
+                displaySearchedResults(array);
             }
         }
         for(Dvd elm:dvds) {
             if (elm.toString().matches(regex)) {
-                System.out.println(elm.toString());
+                array.add(elm.toString());
+                displaySearchedResults(array);
             }
         }
-        //Footing of page
-        System.out.println("***********************************************************************");
 
     }
 
@@ -122,7 +122,16 @@ public class ItemList extends Transaction{
             newBook.setSubject(info[8]);
             newBook.setStatus(info[9]);
             newBook.setNumberOfCopy(Integer.parseInt(info[10]));
-            books.add(newBook);
+            for (Book elm: books) {
+                if (elm.toString().matches(newBook.toString())){
+                    elm.setNumberOfCopy(elm.getNumberOfCopy() + newBook.getNumberOfCopy());
+                    break;
+                } else {
+                    books.add(newBook);
+                    break;
+                }
+            }
+
         } else if (info[0].matches("J.*")) {
             Journal newJournal = new Journal();
             newJournal.setId(info[0]);
@@ -134,7 +143,15 @@ public class ItemList extends Transaction{
             newJournal.setSubject(info[6]);
             newJournal.setStatus(info[7]);
             newJournal.setNumberOfCopy(Integer.parseInt(info[8]));
-            journals.add(newJournal);
+            for (Journal elm: journals) {
+                if (elm.toString().matches(newJournal.toString())) {
+                    elm.setNumberOfCopy(elm.getNumberOfCopy() + newJournal.getNumberOfCopy());
+                    break;
+                } else {
+                    journals.add(newJournal);
+                    break;
+                }
+            }
         } else if (info[0].matches("D.*")) {
             Dvd newDvd = new Dvd();
             newDvd.setId(info[0]);
@@ -146,7 +163,16 @@ public class ItemList extends Transaction{
             newDvd.setSubject(info[6]);
             newDvd.setStatus(info[7]);
             newDvd.setNumberOfCopy(Integer.parseInt(info[8]));
-            dvds.add(newDvd);
+            for (Dvd elm: dvds) {
+                if (elm.toString().matches(newDvd.toString())){
+                    elm.setNumberOfCopy(elm.getNumberOfCopy() + newDvd.getNumberOfCopy());
+                    break;
+                } else {
+                    dvds.add(newDvd);
+                    break;
+                }
+            }
+
         }
     }
 
