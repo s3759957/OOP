@@ -13,17 +13,21 @@ public class Transaction {
     private String memberId;
     private String itemId;
     private LocalDate borrowDate;
-    protected double penaltyRecord;
+    private double penaltyRecord;
     private String status;
 
     // status: (Borrowing| Returned)
 
-    public Transaction( String memberId, String itemId, String borrowDate, double penaltyRecord, String status) {
+    public Transaction(String memberId, String itemId, String borrowDate, double penaltyRecord, String status) {
         this.memberId = memberId;
         this.itemId = itemId;
         this.borrowDate = LocalDate.parse(borrowDate);
         this.penaltyRecord = penaltyRecord;
         this.status = status;
+    }
+    @Override
+    public String toString() {
+        return memberId+";"+itemId+";"+borrowDate+";"+penaltyRecord+";"+status+";";
     }
 
     public String getMemberId() {

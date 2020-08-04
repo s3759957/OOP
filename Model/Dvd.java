@@ -1,16 +1,23 @@
 package asm_1.Model;
 
-import java.io.FileNotFoundException;
-
 /**
  * 
  */
 public class Dvd {
+    private String authors;
+    private String id;
+    private String title;
+    private String publication;
+    private String year;
+    private String language;
+    private String subject;
+    private String status;
+    private int numberOfCopy;
 
     /**
      * Default constructor
      */
-    public Dvd() throws FileNotFoundException {
+    public Dvd() {
         authors = null;
         id = null;
         title = null;
@@ -22,17 +29,6 @@ public class Dvd {
         numberOfCopy = 0;
 
     }
-
-    private String authors;
-    private String id;
-    private String title;
-    private String publication;
-    private String year;
-    private String language;
-    private String subject;
-    private String status;
-    private int numberOfCopy;
-
 
     /**
      * @param title 

@@ -6,11 +6,20 @@ import java.io.FileNotFoundException;
  * 
  */
 public class Journal{
+    private String issn;
+    private String id;
+    private String title;
+    private String publication;
+    private String year;
+    private String language;
+    private String subject;
+    private String status;
+    private int numberOfCopy;
 
     /**
      * Default constructor
      */
-    public Journal() throws FileNotFoundException {
+    public Journal() {
         issn = null;
         id = null;
         title = null;
@@ -22,18 +31,6 @@ public class Journal{
         numberOfCopy = 0;
 
     }
-
-    private String issn;
-    private String id;
-    private String title;
-    private String publication;
-    private String year;
-    private String language;
-    private String subject;
-    private String status;
-    private int numberOfCopy;
-
-
 
     /**
      * @param title 

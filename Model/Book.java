@@ -6,13 +6,22 @@ import java.io.FileNotFoundException;
  * 
  */
 public class Book {
+    private String authors;
+    private String edition;
+    private String isbn;
+    private String id;
+    private String title;
+    private String publication;
+    private String year;
+    private String language;
+    private String subject;
+    private String status;
+    private int numberOfCopy;
 
     /**
      * Default constructor
-     * @param
-     *
      */
-    public Book() throws FileNotFoundException {
+    public Book() {
         authors = null;
         edition = null;
         isbn = null;
@@ -26,18 +35,6 @@ public class Book {
         numberOfCopy = 0;
 
     }
-
-    private String authors;
-    private String edition;
-    private String isbn;
-    private String id;
-    private String title;
-    private String publication;
-    private String year;
-    private String language;
-    private String subject;
-    private String status;
-    private int numberOfCopy;
 
     /**
      * @param id

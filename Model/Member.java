@@ -6,6 +6,13 @@ import java.time.LocalDate;
  * 
  */
 public class Member {
+    private String fullName;
+    private String id;
+    private String phone;
+    private String email;
+    private String address;
+    private LocalDate expiredDate;
+    private String status;
 
     /**
      * Default constructor
@@ -17,21 +24,7 @@ public class Member {
         email = null;
         address = null;
         status = null;
-//        penaltyRecord = 0;
     }
-
-    private String fullName;
-    private String id;
-    private String phone;
-    private String email;
-    private String address;
-    private LocalDate expiredDate;
-    private String status;
-//    private String [] itemsBorrowed = new String[5];  /*id of items*/
-//    private String [] dueDateOfItem = new String[5];
-//    private double penaltyRecord;
-
-
 
     /**
      * @param fullName
@@ -51,40 +44,14 @@ public class Member {
         this.address = address;
         this.expiredDate= LocalDate.parse(expiredDate);
         this.status = status;
-//        this.itemsBorrowed[0] = item0;
-//        this.itemsBorrowed[1] = item1;
-//        this.itemsBorrowed[2] = item2;
-//        this.itemsBorrowed[3] = item3;
-//        this.itemsBorrowed[4] = item4;
-//        this.dueDateOfItem[0] = dueDate0;
-//        this.dueDateOfItem[1] = dueDate1;
-//        this.dueDateOfItem[2] = dueDate2;
-//        this.dueDateOfItem[3] = dueDate3;
-//        this.dueDateOfItem[4] = dueDate4;
-//        this.penaltyRecord = penaltyRecord;
-
     }
-//
-//    /**
-//     * return Borrowed Items an its due date displayed side to side
-//     */
-//
-//    public String getLoanInfo() {
-//        String fullLoanInfo = "";
-//        for (int i = 0; i< 4; i++){
-//            if (itemsBorrowed[i] != "none"){
-//                fullLoanInfo += (itemsBorrowed[i] + ";" + dueDateOfItem[i] + ";");
-//            }
-//        }
-//        return fullLoanInfo;
-//    }
 
 
     /**
      * @return
      */
     public String toString() {
-        return fullName +";"+id+";"+phone+";"+address+";"+expiredDate+";"+status+";";
+        return fullName +";"+id+";"+phone+";"+email+";"+address+";"+expiredDate+";"+status+";";
     }
 
     /**
@@ -149,22 +116,6 @@ public class Member {
     public void setStatus(String status) {
         this.status = status;
     }
-//
-//    /**
-//     * @param penaltyRecord
-//     * @return
-//     */
-//    public void setPenaltyRecord(double penaltyRecord) {
-//        this.penaltyRecord = penaltyRecord;
-//    }
-//
-//    public void setItemsBorrowed(String itemsBorrowed, int index) {
-//        this.itemsBorrowed[index] = itemsBorrowed;
-//    }
-//
-//    public void setDueDateOfItem(String dueDateOfItem, int index) {
-//        this.dueDateOfItem[index] = dueDateOfItem;
-//    }
 
 
 }
