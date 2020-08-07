@@ -1,7 +1,7 @@
 package asm_1.Model;
 
 /**
- * 
+ *
  */
 public class Dvd {
     private String authors;
@@ -31,16 +31,16 @@ public class Dvd {
     }
 
     /**
-     * @param title 
-     * @param authors 
-     * @param publication 
-     * @param year 
-     * @param language 
-     * @param subject 
+     * @param title
+     * @param authors
+     * @param publication
+     * @param year
+     * @param language
+     * @param subject
      * @param status
      * @param numberOfCopy
      */
-    public Dvd(String id,String title, String authors, String publication, String year, String language, String subject, String status, int numberOfCopy) {
+    public Dvd(String id, String title, String authors, String publication, String year, String language, String subject, String status, int numberOfCopy) {
         this.authors = authors;
         this.id = id;
         this.title = title;
@@ -56,19 +56,20 @@ public class Dvd {
      * @return
      */
     public String toString() {
-        return id +";"+title +";"+authors+";"+ publication +";"+ year +";"+ language +";"+ subject +";"+ status+";"+ numberOfCopy+";";
+        return id + ";" + title + ";" + authors + ";" + publication + ";" + year + ";" + language + ";" + subject + ";" + status + ";" + numberOfCopy + ";";
     }
 
 
     public String getId() {
         return id;
     }
+
     public int getNumberOfCopy() {
         return numberOfCopy;
     }
 
     /**
-     * @param authors 
+     * @param authors
      * @return
      */
     public void setAuthors(String authors) {
@@ -76,7 +77,7 @@ public class Dvd {
     }
 
     /**
-     * @param title 
+     * @param title
      * @return
      */
     public void setTitle(String title) {
@@ -84,7 +85,7 @@ public class Dvd {
     }
 
     /**
-     * @param publication 
+     * @param publication
      * @return
      */
     public void setPublication(String publication) {
@@ -92,7 +93,7 @@ public class Dvd {
     }
 
     /**
-     * @param year 
+     * @param year
      * @return
      */
     public void setYear(String year) {
@@ -100,7 +101,7 @@ public class Dvd {
     }
 
     /**
-     * @param language 
+     * @param language
      * @return
      */
     public void setLanguage(String language) {
@@ -108,7 +109,7 @@ public class Dvd {
     }
 
     /**
-     * @param subject 
+     * @param subject
      * @return
      */
     public void setSubject(String subject) {
@@ -116,7 +117,7 @@ public class Dvd {
     }
 
     /**
-     * @param status 
+     * @param status
      * @return
      */
     public void setStatus(String status) {
@@ -127,7 +128,9 @@ public class Dvd {
      * @param id
      * @return
      */
-    public void setId(String id) { this.id = id;}
+    public void setId(String id) {
+        this.id = id;
+    }
 
     /**
      * @param numberOfCopy

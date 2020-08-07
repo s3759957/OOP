@@ -17,4 +17,4 @@ D16;Big little lies;USA: Penguin Group;Moriarty, Liane;2017;English;Drama;availa
 D17;Three seasons;USA: Penguin Group;Keitel, Harvey;2010;English;Feature films;available;4;
 D18;Outsourced;Andy, Hong;Seattle, Wash: Shadowcatcher Entertainment;2010;English;DVDs -- Packaging;available;4;
 D19;One flew over the cuckoo's nest;Milos, Forman;Burbank, CA: Warner Home Video;2014;English;Compact discs -- Packaging;available;5;
-D20;I am Legend;Braga, Alice;Hochiminh: Innoform Media;2010;English;Viruses -- Drama;available;4;
+D20;I am Legend;Braga, Alice;Hochiminh: Innoform Media;2010;English;Viruses -- Drama;available;3;

@@ -10,6 +10,7 @@ public class Transaction {
         penaltyRecord = 0;
         status = null;
     }
+
     private String memberId;
     private String itemId;
     private LocalDate borrowDate;
@@ -25,9 +26,10 @@ public class Transaction {
         this.penaltyRecord = penaltyRecord;
         this.status = status;
     }
+
     @Override
     public String toString() {
-        return memberId+";"+itemId+";"+borrowDate+";"+penaltyRecord+";"+status+";";
+        return memberId + ";" + itemId + ";" + borrowDate + ";" + penaltyRecord + ";" + status + ";";
     }
 
     public String getMemberId() {

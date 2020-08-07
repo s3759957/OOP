@@ -1,5 +1,5 @@
 B1;Plastic;Morris, Catrin;1st;London : Penguin Books;2019;9780241375228;English;English language -- Study and teaching -- Foreign speakers;available;2;
-B2;The missing coins;Escott, John & Dodd, Julie;3rd;Harlow, England : Pearson Education;2008;9781405878142;English;Readers for new literates;available;4;
+B2;The missing coins;Escott, John & Dodd, Julie;3rd;Harlow, England : Pearson Education;2008;9781405878142;English;Readers for new literates;available;3;
 B3;Tales of adventurous girls;MacKenzie, Fiona;Penguin Readers edition;London : Penguin Books;2019;9780241397985;English;English language -- Study and teaching -- Foreign speakers;available;4;
 B4;How to turn down a billion dollars : the snapchat story;Morris, Catrin;1st;London : Penguin Books;2019;9780241397725;English;English language -- Study and teaching -- Foreign speakers;available;5;
 B5;The Beatles;Shipton, Paul Hopkins, Andy & Potter, Jocelyn;3rd;Harlow, England : Pearson Education;2000;9781405881753;English;Readers (Adult);available;4;

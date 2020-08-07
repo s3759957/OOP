@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class MemberList {
     protected ArrayList<Member> members;
@@ -23,13 +23,13 @@ public class MemberList {
         scannerMember.useDelimiter(";");
 
         while (scannerMember.hasNext()) {
-            Member info = new Member(scannerMember.next(),scannerMember.next(),scannerMember.next(),scannerMember.next(),scannerMember.next(),scannerMember.next(), scannerMember.next());
+            Member info = new Member(scannerMember.next(), scannerMember.next(), scannerMember.next(), scannerMember.next(), scannerMember.next(), scannerMember.next(), scannerMember.next());
             members.add(info);
             //nextLine here to jump to the following line after one is done scanning
             scannerMember.nextLine();
         }
     }
-    
+
     /**
      * information includes fullName, id, phone, email, address, expiredDate, status, itemsBorrowed
      * Borrowed Items don't get listed here as new members don't have a Borrowed Items Record
@@ -46,8 +46,7 @@ public class MemberList {
             newMember.setExpiredDate(info[5]);
             newMember.setStatus(info[6]);
             members.add(newMember);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             String msg = e.getMessage();
             System.out.println("An error is has occurred. The error is: " + msg);
         }
@@ -63,8 +62,7 @@ public class MemberList {
                     break;
                 }
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             String msg = e.getMessage();
             System.out.println("An error is has occurred. The error is: " + msg);
         }

@@ -9,19 +9,20 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * 
+ *
  */
 public class Menu {
     private ItemList itemList;
     private MemberList memberList;
     private TransactionList transactionList;
+
     /**
      *
      */
     public Menu() throws FileNotFoundException {
         itemList = new ItemList();
         memberList = new MemberList();
-        transactionList = new TransactionList(itemList,memberList);
+        transactionList = new TransactionList(itemList, memberList);
     }
 
     public Menu(ItemList itemList, MemberList memberList, TransactionList transactionList) {
@@ -32,13 +33,13 @@ public class Menu {
 
 
     public void searchWithKeywords(String keywords, Object object) {
-        String regex = ".*"+keywords+".*";
+        String regex = ".*" + keywords + ".*";
         ArrayList<String> array;
         if (object instanceof MemberList) {
             array = new ArrayList<>();
             for (Member elm : memberList.members) {
                 if (elm.toString().matches(regex)) {
-                    array.add(elm.toString()+transactionList.getPenaltyRecord(elm.getId())+transactionList.getCurrentLoanInfo(elm.getId()));
+                    array.add(elm.toString() + transactionList.getPenaltyRecord(elm.getId()) + transactionList.getCurrentLoanInfo(elm.getId()));
                 }
             }
             if (array.isEmpty()) {
@@ -83,11 +84,11 @@ public class Menu {
         int count = 0;
         Scanner scanner = new Scanner(System.in);
 
-        while (command.equals("q") == false){
+        while (command.equals("q") == false) {
             //Heading of page
             System.out.println("**************************************");
-            for (int i = count; i < count + 10; i ++) {
-                if (i< array.size()) {
+            for (int i = count; i < count + 10; i++) {
+                if (i < array.size()) {
                     System.out.println(array.get(i));
                 } else {
                     System.out.println();
@@ -99,13 +100,20 @@ public class Menu {
             command = scanner.next();
             if (command.equals("n")) {
 //              one more if clause to check if array is out of bound
-                if (array.size()-count>10){count += 10;}
-                else {count = 0;}
+                if (array.size() - count > 10) {
+                    count += 10;
+                } else {
+                    count = 0;
+                }
             } else if (command.equals("p")) {
 //              one more if clause to check if array is out of bound
-                if (count > 0) {count -= 10;}
-                else if (array.size()%10==0){count = 10*(array.size()/10)-10;}
-                else {count = 10*(array.size()/10);}
+                if (count > 0) {
+                    count -= 10;
+                } else if (array.size() % 10 == 0) {
+                    count = 10 * (array.size() / 10) - 10;
+                } else {
+                    count = 10 * (array.size() / 10);
+                }
             } else if (command.equals("q")) {
                 break;
             } else {
@@ -130,7 +138,7 @@ public class Menu {
                 printWriter.write(itemList.journals.get(i).toString() + "\n");
             }
         } else if (object instanceof Dvd) {
-            for (int i = 0; i < itemList.dvds.size(); i ++) {
+            for (int i = 0; i < itemList.dvds.size(); i++) {
                 printWriter.write(itemList.dvds.get(i).toString() + "\n");
             }
         } else if (object instanceof Member) {
@@ -171,6 +179,7 @@ public class Menu {
      */
     public void getOption(int option) throws FileNotFoundException {
         Scanner scannerOption = new Scanner(System.in);
+
         switch (option) {
             case 1:
                 System.out.print("Insert keyword: ");
@@ -251,6 +260,7 @@ public class Menu {
                 System.out.println("Au Revoir !!! (Good-Bye in French) ");
                 quit();
         }
+
     }
 
     /**
@@ -273,12 +283,18 @@ public class Menu {
         //to create object Item & Member
         Menu menu = new Menu();
         int input = 0;
-        Scanner scanner = new Scanner(System.in);
-
-        while (true) {
-            menu.displayMenu();
-            input = scanner.nextInt();
-            menu.getOption(input);
+        try {
+            Scanner scanner = new Scanner(System.in);
+            while (true) {
+                menu.displayMenu();
+                input = scanner.nextInt();
+                menu.getOption(input);
+            }
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            System.out.println("An error is has occurred. The error is: " + msg);
+            System.out.println("Programme is automatically saved !!!");
+            menu.quit();
         }
 
     }

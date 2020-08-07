@@ -1,11 +1,10 @@
 package asm_1.Model;
 
-import java.io.FileNotFoundException;
 
 /**
- * 
+ *
  */
-public class Journal{
+public class Journal {
     private String issn;
     private String id;
     private String title;
@@ -33,16 +32,16 @@ public class Journal{
     }
 
     /**
-     * @param title 
-     * @param publication 
-     * @param year 
-     * @param issn 
-     * @param language 
-     * @param subject 
+     * @param title
+     * @param publication
+     * @param year
+     * @param issn
+     * @param language
+     * @param subject
      * @param status
      * @param numberOfCopy
      */
-    public Journal(String id,String title, String publication, String year, String issn, String language, String subject, String status, int numberOfCopy) {
+    public Journal(String id, String title, String publication, String year, String issn, String language, String subject, String status, int numberOfCopy) {
         this.issn = issn;
         this.id = id;
         this.title = title;
@@ -59,12 +58,13 @@ public class Journal{
      * @return
      */
     public String toString() {
-        return id +";"+title +";"+ publication +";"+ year +";"+ issn +";"+ language +";"+ subject +";"+ status+";"+ numberOfCopy+";";
+        return id + ";" + title + ";" + publication + ";" + year + ";" + issn + ";" + language + ";" + subject + ";" + status + ";" + numberOfCopy + ";";
     }
 
     public String getId() {
         return id;
     }
+
     public int getNumberOfCopy() {
         return numberOfCopy;
     }
@@ -78,7 +78,7 @@ public class Journal{
     }
 
     /**
-     * @param title 
+     * @param title
      * @return
      */
     public void setTitle(String title) {
@@ -86,7 +86,7 @@ public class Journal{
     }
 
     /**
-     * @param publication 
+     * @param publication
      * @return
      */
     public void setPublication(String publication) {
@@ -94,7 +94,7 @@ public class Journal{
     }
 
     /**
-     * @param year 
+     * @param year
      * @return
      */
     public void setYear(String year) {
@@ -102,7 +102,7 @@ public class Journal{
     }
 
     /**
-     * @param language 
+     * @param language
      * @return
      */
     public void setLanguage(String language) {
@@ -110,7 +110,7 @@ public class Journal{
     }
 
     /**
-     * @param subject 
+     * @param subject
      * @return
      */
     public void setSubject(String subject) {
@@ -118,7 +118,7 @@ public class Journal{
     }
 
     /**
-     * @param status 
+     * @param status
      * @return
      */
     public void setStatus(String status) {

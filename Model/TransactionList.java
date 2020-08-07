@@ -37,7 +37,9 @@ public class TransactionList {
         int countItems = 0;
         int checkItem = 0;
 //      To check if user insert right ID
-        if (checkId(memberId,itemId) == true) {return;}
+        if (checkId(memberId, itemId) == false) {
+            return;
+        }
 //      To check if the member borrowed fewer than 5 items
         for (int i = 0; i < transactions.size(); i++) {
             if (transactions.get(i).getMemberId().equals(memberId) && transactions.get(i).getStatus() == "on loan") {
@@ -62,8 +64,7 @@ public class TransactionList {
      */
     public void returnItems(String memberId, String itemId) {
         //      To check if user insert right ID
-        if (checkId(memberId,itemId) == false) {
-            System.out.println("Wrong ID info !!!");
+        if (checkId(memberId, itemId) == false) {
             return;
         }
         for (int i = 0; i < transactions.size(); i++) {
@@ -189,9 +190,10 @@ public class TransactionList {
                 record += transactions.get(i).getPenaltyRecord();
             }
         }
-        outcome += record+";";
+        outcome += record + ";";
         return outcome;
     }
+
     /**
      *
      */
@@ -242,7 +244,7 @@ public class TransactionList {
         }
         if (answer == 1) {
             return false;
-        } else{
+        } else {
             return true;
         }
     }
